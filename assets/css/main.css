@@ -7,10 +7,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 .smallselfie {
-	width: 8rem;
-	height: 8rem;
+	width: 12rem;
+	height: 12rem;
 	object-fit: cover;
-	border-radius: 8rem;
+	border-radius: 12rem;
 }
 .skillbox {
 	display: flex;
