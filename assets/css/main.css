@@ -1320,9 +1320,9 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 8rem;
-			height: 8rem;
-			line-height: 8rem;
+			width: 12rem;
+			height: 12rem;
+			line-height: 12rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
 		}
@@ -1470,9 +1470,9 @@ input, select, textarea {
 				}
 
 			#header .logo {
-				width: 8rem;
-				height: 8rem;
-				line-height: 8rem;
+				width: 12rem;
+				height: 12rem;
+				line-height: 12rem;
 			}
 
 				#header .logo .icon:before {
