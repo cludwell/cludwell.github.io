@@ -1,15 +1,43 @@
-import { useState,useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Tab from "./Tab";
 import SideDrawer from "./SideDrawer";
 export default function AboutMe() {
   const [open, setOpen] = useState(false);
   const aboutMeRef = useRef(null);
+
+  const openDrawer = () => {
+    if (open) return;
+    setOpen(true);
+  };
+  useEffect(() => {
+    const closeDrawer = (e) => {
+      console.log("Event listener triggered");
+      if (
+        aboutMeRef.current && // Check if ref is defined
+        !aboutMeRef.current.contains(e.target) && // Check if clicked element is not within SideDrawer
+        !e.target.closest(".about-me") // Check if clicked element is not within Tab component
+      ) {
+        setOpen(false);
+      }
+    };
+
+    console.log("Event listener added to document");
+    document.addEventListener("click", closeDrawer);
+
+    return () => {
+      console.log("Event listener removed from document");
+      document.removeEventListener("click", closeDrawer);
+    };
+  }, [open, setOpen]);
+
   return (
     <>
       <span onClick={() => setOpen(true)}>
         <Tab title={"About Me"} number={"01"} />
       </span>
       <SideDrawer open={open} setOpen={setOpen} ref={aboutMeRef}>
+        <div className=" about-me">
+
         <h2 className="my-12 text-4xl text-white"> about me👋</h2>
         <p>
           {` Hi! I'm Chris! I'm a full stack Software Engineer looking for a
@@ -37,6 +65,7 @@ export default function AboutMe() {
           the right opportunity! Please feel free to contact me to discuss work
           opportunities or possible collaborations.`}
         </p>
+        </div>
       </SideDrawer>
     </>
   );

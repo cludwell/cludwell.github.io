@@ -1,29 +1,6 @@
 import { baskervville } from "../fonts";
 import { useEffect, forwardRef } from "react";
 const SideDrawer = forwardRef(({ open, setOpen, children }, ref) => {
-  const openDrawer = () => {
-    if (open) return;
-    setOpen(true);
-  };
-  useEffect(() => {
-    if (open) return;
-
-    const closeDrawer = (e) => {
-      console.log("Event listener triggered");
-      if (ref && ref.current && !ref.current?.contains(e.target)) {
-        setOpen(false);
-      }
-    };
-
-    console.log("Event listener added to document");
-
-    document.addEventListener("click", closeDrawer);
-
-    return () => {
-      console.log("Event listener removed from document");
-      document.removeEventListener("click", closeDrawer);
-    };
-  }, [open, setOpen,ref]);
 
   return (
     <div
