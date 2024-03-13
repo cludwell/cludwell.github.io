@@ -33,7 +33,7 @@ export default function AboutMe({aboutMeOpen, setAboutMeOpen}) {
       <SideDrawer open={aboutMeOpen} setOpen={setAboutMeOpen} ref={aboutMeRef}>
         <div className=" about-me">
 
-        <h2 className="my-12 text-4xl text-white"> about me👋</h2>
+        <h2 className="my-12 text-4xl text-white"> About Me👋</h2>
         <p>
           {` Hi! I'm Chris! I'm a full stack Software Engineer looking for a
           Junior Developer position. I'm passionate about software that levels

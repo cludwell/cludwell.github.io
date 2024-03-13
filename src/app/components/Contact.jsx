@@ -34,7 +34,7 @@ export default function Contact({contactOpen, setContactOpen}) {
       </span>
       <SideDrawer open={contactOpen} setOpen={setContactOpen} ref={contactRef}>
         <div className=" contact">
-          <h2 className="text-4xl text-white"> contact 📬</h2>
+          <h2 className="text-4xl text-white"> Contact 📬</h2>
           <p className="my-12">
             {`Please checkout my resume and feel free to email me at `}
             <a href="mailto:cludwell@gmail.com">cludwell@gmail.com</a>.{" "}

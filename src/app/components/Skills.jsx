@@ -31,7 +31,7 @@ export default function Skills({skillsOpen, setSkillsOpen}) {
       </span>
       <SideDrawer open={skillsOpen} setOpen={setSkillsOpen} ref={skillsRef}>
         <div className=" skills">
-          <h2 className="text-4xl text-white"> skills 👨‍💻</h2>
+          <h2 className="text-4xl text-white"> Skills 👨‍💻</h2>
           <p className="my-12">{`At the moment I'm studying C# and also experimenting with frontend frameworks like framer-motion and anime.js`}</p>
           <p href="https://skillicons.dev" align="center">
             <img src="https://skillicons.dev/icons?i=androidstudio,aws,cs,css,docker,eclipse,express,html,flask,git,js,nodejs,nextjs,postgres,postman,prisma,py,react,redux,sqlite,sequelize,tailwind,ts,visualstudio,vscode&perline=8" />
