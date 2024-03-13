@@ -8,6 +8,7 @@ import sidequest from "../../../public/images/sidequest.png";
 import fellowship from "../../../public/images/fellowship.png";
 import spacey from "../../../public/images/spacey.png";
 import IconMiniGithub from "./Icons/IconMiniGithub";
+import scarebnb from "../../../public/images/scarebnb.png";
 export default function Projects({ projectsOpen, setProjectsOpen }) {
   const projectRef = useRef(null);
 
@@ -60,7 +61,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
               />
             </a>
           </span>
-          <div className="flex flex-row justify-around my-4">
+          <div className="flex flex-row justify-around my-8">
             <a href="https://github.com/cludwell/sidequest" target="_blank">
               <div className="w-10 h-10">
                 <IconMiniGithub />
@@ -88,7 +89,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
               />
             </a>
           </span>
-          <div className="flex flex-row justify-around my-4">
+          <div className="flex flex-row justify-around my-8">
             <a
               href="https://github.com/cludwell/capstone-project"
               target="_blank"
@@ -129,30 +130,64 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
             </a>
           </span>
 
-          <div className="flex flex-row justify-around my-4">
-            <a
-            href="https://github.com/Chris-MacMaster/spacy"
-            target="_blank"
-            >
+          <div className="flex flex-row justify-around my-8">
+            <a href="https://github.com/Chris-MacMaster/spacy" target="_blank">
               <div className="w-10 h-10 ">
                 <IconMiniGithub />
               </div>
             </a>
 
             <a
-            href="https://spacey-yscj.onrender.com/"
-            className="scale-150 "
+              href="https://spacey-yscj.onrender.com/"
+              className="scale-150 "
               target="_blank"
             >
               <IconBrowser />
             </a>
           </div>
+          <p>Spacey is a science & science fiction spin on the Etsy app.</p>
           <p>
-            Spacey is a science & science fiction spin on the Etsy app.
+            Technologies used include 🧪Flask, ☕JavaScript, 🐘PostgreSQL,
+            🐍Python, ⚛Redux.js/React.js ⚗SQLAlchemy, and 🌫 Tailwind CSS.
           </p>
+
+          <h2 class="major">ScareBnb</h2>
+          <span class="image main">
+            <a href="https://chris-auth-me-373j.onrender.com/" target="_blank">
+              <Image
+                src={scarebnb}
+                alt={"a screenshot of scarebnb app"}
+                className="my-4 rounded-lg"
+                width={1000}
+                height={1000}
+              />
+            </a>
+          </span>
+          <div className="flex flex-row justify-around my-8">
+            <a href="https://github.com/cludwell/api-project" target="_blank">
+              <div className="w-10 h-10 ">
+                <IconMiniGithub />
+              </div>
+            </a>
+
+            <a
+              href="https://chris-auth-me-373j.onrender.com/"
+              className="scale-150 "
+              target="_blank"
+            >
+              <IconBrowser />
+            </a>
+          </div>
+
           <p>
-            Technologies used include  🧪Flask, ☕JavaScript,
-            🐘PostgreSQL, 🐍Python,  ⚛Redux.js/React.js ⚗SQLAlchemy, and 🌫 Tailwind CSS.
+            {`Scarebnb is a fullstack application made entirely with ☕JavaScript
+            and JavaScript based technologies. It's an Airbnb clone with a
+            spooky theme, all the spots are allegedly haunted locations.`}
+          </p>
+          <br />
+          <p>
+            Technologies used include ☕JavaScript, 🐘PostgreSQL, 💠Sequelize,
+            📩Express.js, ⚛Redux.js/React.js
           </p>
         </div>
         {/* <Dots /> */}
