@@ -105,6 +105,15 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
               <IconBrowser />
             </a>
           </div>
+          <p>
+            Fancamp is a Bandcamp clone that I made as my capstone project for
+            the App Academy bootcamp with a metal focus. Includes a custom audio player component and band page styling by user.
+          </p>
+          <br/>
+          <p>
+            Technologies used include 🧪Flask, ☕JavaScript, 🐍Python,
+            🐘PostgreSQL,⚛Redux.js/React.js, ⚗SQLAlchemy,  and 🌫 Tailwind CSS
+          </p>
         </div>
         {/* <Dots /> */}
       </SideDrawer>
