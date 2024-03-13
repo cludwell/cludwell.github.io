@@ -6,6 +6,7 @@ import IconBrowser from "./Icons/IconBrowser";
 import Image from "next/image";
 import sidequest from "../../../public/images/sidequest.png";
 import fellowship from "../../../public/images/fellowship.png";
+import spacey from "../../../public/images/spacey.png";
 import IconMiniGithub from "./Icons/IconMiniGithub";
 export default function Projects({ projectsOpen, setProjectsOpen }) {
   const projectRef = useRef(null);
@@ -107,12 +108,51 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
           </div>
           <p>
             Fancamp is a Bandcamp clone that I made as my capstone project for
-            the App Academy bootcamp with a metal focus. Includes a custom audio player component and band page styling by user.
+            the App Academy bootcamp with a metal focus. Includes a custom audio
+            player component and band page styling by user.
           </p>
-          <br/>
+          <br />
           <p>
             Technologies used include 🧪Flask, ☕JavaScript, 🐍Python,
-            🐘PostgreSQL,⚛Redux.js/React.js, ⚗SQLAlchemy,  and 🌫 Tailwind CSS
+            🐘PostgreSQL,⚛Redux.js/React.js, ⚗SQLAlchemy, and 🌫 Tailwind CSS
+          </p>
+          <h2 class=" text-3xl mt-12">Spacey</h2>
+          <span class="image main">
+            <a href="https://spacey-yscj.onrender.com/" target="_blank">
+              <Image
+                src={spacey}
+                alt="a screenshot of spacey"
+                className="my-4 rounded-lg"
+                width={1000}
+                height={1000}
+              />
+            </a>
+          </span>
+
+          <div className="flex flex-row justify-around my-4">
+            <a
+            href="https://github.com/Chris-MacMaster/spacy"
+            target="_blank"
+            >
+              <div className="w-10 h-10 ">
+                <IconMiniGithub />
+              </div>
+            </a>
+
+            <a
+            href="https://spacey-yscj.onrender.com/"
+            className="scale-150 "
+              target="_blank"
+            >
+              <IconBrowser />
+            </a>
+          </div>
+          <p>
+            Spacey is a science & science fiction spin on the Etsy app.
+          </p>
+          <p>
+            Technologies used include  🧪Flask, ☕JavaScript,
+            🐘PostgreSQL, 🐍Python,  ⚛Redux.js/React.js ⚗SQLAlchemy, and 🌫 Tailwind CSS.
           </p>
         </div>
         {/* <Dots /> */}
