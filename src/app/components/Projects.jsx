@@ -40,7 +40,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
   return (
     <>
       <span onClick={openDrawer}>
-        <Tab title={"Projects"} number={"02"} open={projectsOpen}/>
+        <Tab title={"Projects"} number={"02"} open={projectsOpen} />
       </span>
       <SideDrawer
         open={projectsOpen}
@@ -117,8 +117,8 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
             Technologies used include 🧪Flask, ☕JavaScript, 🐍Python,
             🐘PostgreSQL,⚛Redux.js/React.js, ⚗SQLAlchemy, and 🌫 Tailwind CSS
           </p>
-          <h2 class=" text-3xl mt-12">Spacey</h2>
-          <span class="image main">
+          <h2 className="mt-12 text-3xl ">Spacey</h2>
+          <span className="image main">
             <a href="https://spacey-yscj.onrender.com/" target="_blank">
               <Image
                 src={spacey}
@@ -151,8 +151,8 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
             🐍Python, ⚛Redux.js/React.js ⚗SQLAlchemy, and 🌫 Tailwind CSS.
           </p>
 
-          <h2 class="major">ScareBnb</h2>
-          <span class="image main">
+          <h2 className="major">ScareBnb</h2>
+          <span className="image main">
             <a href="https://chris-auth-me-373j.onrender.com/" target="_blank">
               <Image
                 src={scarebnb}
