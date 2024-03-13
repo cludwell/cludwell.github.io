@@ -6,7 +6,7 @@ const SideDrawer = forwardRef(({ open, setOpen, children }, ref) => {
     <div
       className={`
     fixed w-2/3 flex transition-all z-30 duration-500 h-screen ease-in-out top-0 bg-black/40 right-0 overflow-y-auto overflow-x-hidden p-6
-    ${open ? "opacity-100 translate-x-0" : "translate-x-full opacity-0"}
+    ${open ? "translate-x-0" : "translate-x-[-100vw] "}
     `}
       ref={ref}
     >
