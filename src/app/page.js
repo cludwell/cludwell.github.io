@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Dots from "./components/Dots";
 import Tab from "./components/Tab";
@@ -7,10 +7,10 @@ import { useState } from "react";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 export default function Home() {
-  const [selected, setSelected] = useState()
+  const [selected, setSelected] = useState();
   return (
-
     <main
       className="flex flex-row items-center justify-between min-h-screen"
       style={{
@@ -21,13 +21,12 @@ export default function Home() {
         backgroundPosition: "100% 20%",
       }}
     >
-
       <nav className="z-10 ml-16 ">
         <ul>
-        <AboutMe />
-        <Projects />
-        <Skills />
-        <Tab title={"Contact"} number={"04"} />
+          <AboutMe />
+          <Projects />
+          <Skills />
+          <Contact />
         </ul>
       </nav>
       {/* <Dots /> */}
