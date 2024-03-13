@@ -5,12 +5,14 @@ import Tab from "./components/Tab";
 import rocky from "../../public/images/rocky.jpg";
 import { useState } from "react";
 import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 export default function Home() {
   const [selected, setSelected] = useState()
   return (
 
     <main
-      className="flex flex-row items-center min-h-screen"
+      className="flex flex-row items-center justify-between min-h-screen"
       style={{
         backgroundImage: "url('/images/rocky.jpg')",
         margin: 0,
@@ -20,16 +22,15 @@ export default function Home() {
       }}
     >
 
-      {/* <Dots /> */}
       <nav className="z-10 ml-16 ">
         <ul>
-
         <AboutMe />
-        <Tab title={"Projects"} number={"02"} />
-        <Tab title={"Skills"} number={"03"} />
+        <Projects />
+        <Skills />
         <Tab title={"Contact"} number={"04"} />
         </ul>
       </nav>
+      {/* <Dots /> */}
       {/* <div className="h-screen bg-black/40">over here</div> */}
     </main>
   );
