@@ -33,7 +33,7 @@ export default function AboutMe({ aboutMeOpen, setAboutMeOpen }) {
         <Tab title={"About Me"} number={"01"} open={aboutMeOpen} />
       </span>
       <SideDrawer open={aboutMeOpen} setOpen={setAboutMeOpen} ref={aboutMeRef}>
-        <div className=" about-me">
+        <div className="max-w-screen-md about-me">
           <h2 className={` my-12 text-4xl text-white`}> About Me👋</h2>
           <Dots />
           <p>

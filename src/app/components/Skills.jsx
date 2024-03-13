@@ -30,7 +30,7 @@ export default function Skills({skillsOpen, setSkillsOpen}) {
         <Tab title={"Skills"} number={"03"} open={skillsOpen}/>
       </span>
       <SideDrawer open={skillsOpen} setOpen={setSkillsOpen} ref={skillsRef}>
-        <div className=" skills">
+        <div className="max-w-screen-md  skills">
           <h2 className="text-4xl text-white"> Skills 👨‍💻</h2>
           <p className="my-12">{`At the moment I'm studying C# and also experimenting with frontend frameworks like framer-motion and anime.js`}</p>
           <p href="https://skillicons.dev" align="center">

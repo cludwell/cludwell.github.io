@@ -33,7 +33,7 @@ export default function Contact({contactOpen, setContactOpen}) {
         <Tab title={"Contact"} number={"04"} open={contactOpen}/>
       </span>
       <SideDrawer open={contactOpen} setOpen={setContactOpen} ref={contactRef}>
-        <div className=" contact">
+        <div className="max-w-screen-md  contact">
           <h2 className="text-4xl text-white"> Contact 📬</h2>
           <p className="my-12">
             {`Please checkout my resume and feel free to email me at `}

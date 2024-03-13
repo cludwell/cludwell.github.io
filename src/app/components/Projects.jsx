@@ -48,7 +48,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
         setOpen={setProjectsOpen}
         ref={projectRef}
       >
-        <div className=" projects">
+        <div className="max-w-screen-md projects">
           <h2 className="mb-12 text-4xl text-white"> Projects 👨‍🏫</h2>
           <h2 className="text-3xl ">SideQuest</h2>
           <span className="image main">

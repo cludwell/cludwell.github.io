@@ -18,11 +18,11 @@ export default function Home() {
     <main
       className="flex flex-row items-center justify-between min-h-screen overflow-hidden"
       style={{
-        backgroundImage: "url('/images/rocky.jpg')",
+        backgroundImage: "url('/images/redwoods.jpg')",
         margin: 0,
         padding: 0,
         backgroundSize: "cover",
-        backgroundPosition: "100% 20%",
+        backgroundPosition: "50% 80%",
       }}
     >
       <nav className="z-10 ml-16 ">
