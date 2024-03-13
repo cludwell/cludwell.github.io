@@ -6,13 +6,12 @@ import IconBrowser from "./Icons/IconBrowser";
 import Image from "next/image";
 import sidequest from "../../../public/images/sidequest.png";
 import fellowship from "../../../public/images/fellowship.png";
-export default function Projects() {
-  const [open, setOpen] = useState(false);
+export default function Projects({projectsOpen, setProjectsOpen}) {
   const projectRef = useRef(null);
 
   const openDrawer = () => {
-    if (open) return;
-    setOpen(true);
+    if (projectsOpen) return;
+    setProjectsOpen(true);
   };
   useEffect(() => {
     const closeDrawer = (e) => {
@@ -22,7 +21,7 @@ export default function Projects() {
         !projectRef.current.contains(e.target) && // Check if clicked element is not within SideDrawer
         !e.target.closest(".projects") // Check if clicked element is not within Tab component
       ) {
-        setOpen(false);
+        setProjectsOpen(false);
       }
     };
 
@@ -33,14 +32,14 @@ export default function Projects() {
       console.log("Event listener removed from document");
       document.removeEventListener("click", closeDrawer);
     };
-  }, [open, setOpen]);
+  }, [projectsOpen, setProjectsOpen]);
 
   return (
     <>
-      <span onClick={() => setOpen(true)}>
+      <span onClick={openDrawer}>
         <Tab title={"Projects"} number={"02"} />
       </span>
-      <SideDrawer open={open} setOpen={setOpen} ref={projectRef}>
+      <SideDrawer open={projectsOpen} setOpen={setProjectsOpen} ref={projectRef}>
         <div className=" projects">
           <h2 className="text-4xl text-white"> projects 👨‍🏫</h2>
           <h2 className="major">SideQuest</h2>

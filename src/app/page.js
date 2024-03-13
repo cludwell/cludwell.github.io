@@ -10,10 +10,13 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import IntroCard from "./components/IntroCard";
 export default function Home() {
-  const [selected, setSelected] = useState(true);
+  const [aboutMeOpen, setAboutMeOpen] = useState(false);
+  const [skillsOpen, setSkillsOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
   return (
     <main
-      className="flex flex-row items-center justify-between min-h-screen"
+      className="flex flex-row items-center justify-between min-h-screen overflow-hidden"
       style={{
         backgroundImage: "url('/images/rocky.jpg')",
         margin: 0,
@@ -22,17 +25,24 @@ export default function Home() {
         backgroundPosition: "100% 20%",
       }}
     >
-      <nav className="z-10 ml-16 "
-      onClick={()=>setSelected(false)}>
+      <nav className="z-10 ml-16 ">
         <ul>
-          <AboutMe />
-          <Projects />
-          <Skills />
-          <Contact />
+          <AboutMe aboutMeOpen={aboutMeOpen} setAboutMeOpen={setAboutMeOpen} />
+          <Projects
+            projectsOpen={projectsOpen}
+            setProjectsOpen={setProjectsOpen}
+          />
+          <Skills skillsOpen={skillsOpen} setSkillsOpen={setSkillsOpen} />
+          <Contact contactOpen={contactOpen} setContactOpen={setContactOpen} />
         </ul>
       </nav>
       {/* <Dots /> */}
-      <IntroCard selected={selected}/>
+      <IntroCard
+        aboutMeOpen={aboutMeOpen}
+        skillsOpen={skillsOpen}
+        projectsOpen={projectsOpen}
+        contactOpen={contactOpen}
+      />
     </main>
   );
 }

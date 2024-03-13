@@ -2,12 +2,19 @@ import { gloock } from "../fonts";
 import Image from "next/image";
 import smallselfie2 from "/public/images/smallselfie.jpg";
 
-export default function IntroCard({ selected }) {
+export default function IntroCard({
+  aboutMeOpen,
+  skillsOpen,
+  projectsOpen,
+  contactOpen,
+}) {
   return (
     <>
       <div
         className={`relative w-1/2 text-white transition-all duration-300 ease-in-out ${
-          selected ? "translate-x-0" : "translate-x-[110vw]"
+          !aboutMeOpen && !skillsOpen && !projectsOpen && !contactOpen
+            ? "translate-x-0"
+            : "translate-x-[110vw]"
         }`}
       >
         <h2
@@ -29,11 +36,11 @@ export default function IntroCard({ selected }) {
         />
         <div className="z-10 bg-black/40 w-96 h-96"></div>
       </div>
-      <div
+      {/* <div
         className={`absolute top-0 right-0 z-0 flex w-1/4 h-screen p-6 transition-all duration-500 ease-in-out bg-black/20 ${
             selected ? "translate-x-0" : "translate-x-[110vw]"
           }`}
-      />
+      /> */}
     </>
   );
 }

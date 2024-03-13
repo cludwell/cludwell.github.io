@@ -1,13 +1,13 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Tab from "./Tab";
 import SideDrawer from "./SideDrawer";
-export default function Skills() {
-  const [open, setOpen] = useState(false);
+
+export default function Skills({skillsOpen, setSkillsOpen}) {
   const skillsRef = useRef(null);
 
   const openDrawer = () => {
-    if (open) return;
-    setOpen(true);
+    if (skillsOpen) return;
+    setSkillsOpen(true);
   };
   useEffect(() => {
     const closeDrawer = (e) => {
@@ -16,20 +16,20 @@ export default function Skills() {
         !skillsRef.current.contains(e.target) &&
         !e.target.closest(".skills")
       ) {
-        setOpen(false);
+        setSkillsOpen(false);
       }
     };
     document.addEventListener("click", closeDrawer);
     return () => {
       document.removeEventListener("click", closeDrawer);
     };
-  }, [open, setOpen]);
+  }, [skillsOpen, setSkillsOpen]);
   return (
     <>
-      <span onClick={() => setOpen(true)}>
+      <span onClick={openDrawer}>
         <Tab title={"Skills"} number={"03"} />
       </span>
-      <SideDrawer open={open} setOpen={setOpen} ref={skillsRef}>
+      <SideDrawer open={skillsOpen} setOpen={setSkillsOpen} ref={skillsRef}>
         <div className=" skills">
           <h2 className="text-4xl text-white"> skills 👨‍💻</h2>
           <p className="my-12">{`At the moment I'm studying C# and also experimenting with frontend frameworks like framer-motion and anime.js`}</p>

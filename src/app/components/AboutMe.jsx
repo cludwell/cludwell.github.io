@@ -1,41 +1,36 @@
 import { useState, useRef, useEffect } from "react";
 import Tab from "./Tab";
 import SideDrawer from "./SideDrawer";
-export default function AboutMe() {
-  const [open, setOpen] = useState(false);
+export default function AboutMe({aboutMeOpen, setAboutMeOpen}) {
   const aboutMeRef = useRef(null);
 
   const openDrawer = () => {
-    if (open) return;
-    setOpen(true);
+    if (aboutMeOpen) return;
+    setAboutMeOpen(true);
   };
   useEffect(() => {
     const closeDrawer = (e) => {
-      console.log("Event listener triggered");
       if (
-        aboutMeRef.current && 
+        aboutMeRef.current &&
         !aboutMeRef.current.contains(e.target) &&
         !e.target.closest(".about-me")
       ) {
-        setOpen(false);
+        setAboutMeOpen(false);
       }
     };
 
-    console.log("Event listener added to document");
     document.addEventListener("click", closeDrawer);
-
     return () => {
-      console.log("Event listener removed from document");
       document.removeEventListener("click", closeDrawer);
     };
-  }, [open, setOpen]);
+  }, [aboutMeOpen, setAboutMeOpen,]);
 
   return (
     <>
-      <span onClick={() => setOpen(true)}>
+      <span onClick={openDrawer}>
         <Tab title={"About Me"} number={"01"} />
       </span>
-      <SideDrawer open={open} setOpen={setOpen} ref={aboutMeRef}>
+      <SideDrawer open={aboutMeOpen} setOpen={setAboutMeOpen} ref={aboutMeRef}>
         <div className=" about-me">
 
         <h2 className="my-12 text-4xl text-white"> about me👋</h2>
