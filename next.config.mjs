@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     // Add other experimental features here if needed
   },
+  images: {
+    remotePatterns: ['https://skillicons.dev/']
+  },
   output: 'export',
 };
 
