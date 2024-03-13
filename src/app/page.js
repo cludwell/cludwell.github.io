@@ -1,24 +1,36 @@
+"use client"
 import Image from "next/image";
 import Dots from "./components/Dots";
 import Tab from "./components/Tab";
 import rocky from "../../public/images/rocky.jpg";
+import { useState } from "react";
 export default function Home() {
+  const [selected, setSelected] = useState()
   return (
-    <main className="flex min-h-screen flex-row items-center ">
-      <Image
-        src={rocky}
-        alt="a sunset scene with a fawn in the mid ground"
-        className=" absolute object-top object-contain"
-        height={3000}
-        width={3000}
-      />
+
+    <main
+      className="flex flex-row items-center justify-between min-h-screen"
+      style={{
+        backgroundImage: "url('/images/rocky.jpg')",
+        margin: 0,
+        padding: 0,
+        backgroundSize: "cover",
+        backgroundPosition: "100% 20%",
+
+      }}
+    >
+
       {/* <Dots /> */}
-      <div className=" z-10 ml-24">
+      <nav className="z-10 ml-16 ">
+        <ul>
+
         <Tab title={"About Me"} number={"01"} />
         <Tab title={"Projects"} number={"02"} />
         <Tab title={"Skills"} number={"03"} />
         <Tab title={"Contact"} number={"04"} />
-      </div>
+        </ul>
+      </nav>
+      <div className="h-screen bg-black/40">over here</div>
     </main>
   );
 }
