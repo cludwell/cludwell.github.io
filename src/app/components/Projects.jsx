@@ -9,6 +9,7 @@ import fellowship from "../../../public/images/fellowship.png";
 import spacey from "../../../public/images/spacey.png";
 import IconMiniGithub from "./Icons/IconMiniGithub";
 import scarebnb from "../../../public/images/scarebnb.png";
+
 export default function Projects({ projectsOpen, setProjectsOpen }) {
   const projectRef = useRef(null);
 
