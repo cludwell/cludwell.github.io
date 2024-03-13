@@ -3,13 +3,13 @@ import anime from "animejs";
 
 const Dots = () => {
   return (
-    <div className="relative grid place-content-center px-8 py-12">
+    <div className="relative grid px-8 py-12 place-content-center">
       <DotGrid />
     </div>
   );
 };
 
-const GRID_WIDTH = 25;
+const GRID_WIDTH = 30;
 const GRID_HEIGHT = 25;
 
 const DotGrid = () => {
@@ -26,7 +26,7 @@ const DotGrid = () => {
       ],
       opacity: [
         { value: 1, easing: "easeOutSine", duration: 250 },
-        { value: 0.5, easing: "easeInOutQuad", duration: 500 },
+        { value: 1, easing: "easeInOutQuad", duration: 500 },
       ],
       delay: anime.stagger(100, {
         grid: [GRID_WIDTH, GRID_HEIGHT],
@@ -47,7 +47,7 @@ const DotGrid = () => {
           key={`${i}-${j}`}
         >
           <div
-            className="dot-point h-3 w-3 rounded-full bg-gradient-to-b from-cyan-700 to-cyan-400 opacity-50 group-hover:from-indigo-600 group-hover:to-white"
+            className="w-3 h-3 rounded-full dot-point bg-gradient-to-b from-cyan-700 to-cyan-400 group-hover:from-indigo-600 group-hover:to-white"
             data-index={index}
           />
         </div>
