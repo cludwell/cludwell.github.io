@@ -8,8 +8,9 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import IntroCard from "./components/IntroCard";
 export default function Home() {
-  const [selected, setSelected] = useState();
+  const [selected, setSelected] = useState(true);
   return (
     <main
       className="flex flex-row items-center justify-between min-h-screen"
@@ -21,7 +22,8 @@ export default function Home() {
         backgroundPosition: "100% 20%",
       }}
     >
-      <nav className="z-10 ml-16 ">
+      <nav className="z-10 ml-16 "
+      onClick={()=>setSelected(false)}>
         <ul>
           <AboutMe />
           <Projects />
@@ -30,7 +32,7 @@ export default function Home() {
         </ul>
       </nav>
       {/* <Dots /> */}
-      {/* <div className="h-screen bg-black/40">over here</div> */}
+      <IntroCard selected={selected}/>
     </main>
   );
 }

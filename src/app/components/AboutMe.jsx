@@ -13,9 +13,9 @@ export default function AboutMe() {
     const closeDrawer = (e) => {
       console.log("Event listener triggered");
       if (
-        aboutMeRef.current && // Check if ref is defined
-        !aboutMeRef.current.contains(e.target) && // Check if clicked element is not within SideDrawer
-        !e.target.closest(".about-me") // Check if clicked element is not within Tab component
+        aboutMeRef.current && 
+        !aboutMeRef.current.contains(e.target) &&
+        !e.target.closest(".about-me")
       ) {
         setOpen(false);
       }
