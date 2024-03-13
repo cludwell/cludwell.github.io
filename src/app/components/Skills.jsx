@@ -27,7 +27,7 @@ export default function Skills({skillsOpen, setSkillsOpen}) {
   return (
     <>
       <span onClick={openDrawer}>
-        <Tab title={"Skills"} number={"03"} />
+        <Tab title={"Skills"} number={"03"} open={skillsOpen}/>
       </span>
       <SideDrawer open={skillsOpen} setOpen={setSkillsOpen} ref={skillsRef}>
         <div className=" skills">

@@ -30,7 +30,7 @@ export default function Contact({contactOpen, setContactOpen}) {
   return (
     <>
       <span onClick={openDrawer}>
-        <Tab title={"Contact"} number={"04"} />
+        <Tab title={"Contact"} number={"04"} open={contactOpen}/>
       </span>
       <SideDrawer open={contactOpen} setOpen={setContactOpen} ref={contactRef}>
         <div className=" contact">

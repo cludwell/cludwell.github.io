@@ -40,7 +40,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
   return (
     <>
       <span onClick={openDrawer}>
-        <Tab title={"Projects"} number={"02"} />
+        <Tab title={"Projects"} number={"02"} open={projectsOpen}/>
       </span>
       <SideDrawer
         open={projectsOpen}
