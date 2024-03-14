@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: ['https://skillicons.dev/']
+    // remotePatterns: ['https://skillicons.dev/']
   },
   output: 'export',
 };
