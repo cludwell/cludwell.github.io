@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/cludwell/november-cohort/portfolio-jobsearch/src/app/layout":["static/media/c9a5bc6a7c948fb0-s.p.woff2"],"/home/cludwell/november-cohort/portfolio-jobsearch/src/app/page":["static/media/86667d917ceb322f-s.p.woff2","static/media/59c1a3d5d612e35b.p.woff2","static/media/640ece80909a508b-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';

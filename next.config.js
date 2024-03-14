@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // remotePatterns: ['https://skillicons.dev/']
+    unoptimized: true
   },
   output: 'export',
+  distDir: 'dist'
 };
 
 module.exports = nextConfig;
