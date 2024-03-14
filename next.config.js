@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = nextConfig = {
   images: {
-    remotePatterns: ['https://skillicons.dev/']
+    remotePatterns: ["https://skillicons.dev/"],
   },
-  output: 'export',
+  output: "export",
 };
 
 export default nextConfig;
