@@ -10,7 +10,7 @@ export default function Tab({ title, number, open }) {
       >
         {number}
       </div>
-      <h2 className={`${gloock.className} text-5xl`}>{title}</h2>
+      <h2 className={`${gloock.className} text-5xl text-shadow`}>{title}</h2>
     </li>
   );
 }

@@ -49,7 +49,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
         setOpen={setProjectsOpen}
         ref={projectRef}
       >
-        <div className="max-w-screen-md projects">
+        <div className="max-w-screen-md py-12 projects">
           <h2 className="mb-12 text-4xl text-white"> Projects 👨‍🏫</h2>
           <Title>
             {" "}
