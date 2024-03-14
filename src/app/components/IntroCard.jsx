@@ -1,7 +1,6 @@
-import { gloock, bebas, chonburi } from "../fonts";
+import { bebas, chonburi } from "../fonts";
 import Image from "next/image";
 import smallselfie2 from "/public/images/smallselfie.jpg";
-import Dots from "./Dots";
 
 export default function IntroCard({
   aboutMeOpen,

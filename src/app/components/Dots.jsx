@@ -3,13 +3,13 @@ import anime from "animejs";
 
 const Dots = () => {
   return (
-    <div className="relative grid mx-auto my-8 place-content-center overflow-clip max-w-fit">
+    <div className="relative grid w-64 mx-auto my-4 scale-75 sm:my-8 place-content-center overflow-clip max-w-fit sm:scale-100 sm:w-fit">
       <DotGrid />
     </div>
   );
 };
 
-const GRID_WIDTH = 20;
+const GRID_WIDTH = 30;
 const GRID_HEIGHT = 30;
 
 const DotGrid = () => {
