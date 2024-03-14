@@ -152,7 +152,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
             🐍Python, ⚛Redux.js/React.js ⚗SQLAlchemy, and 🌫 Tailwind CSS.
           </p>
 
-          <h2 className="major">ScareBnb</h2>
+          <h2 className="text-3xl ">ScareBnb</h2>
           <span className="image main">
             <a href="https://chris-auth-me-373j.onrender.com/" target="_blank">
               <Image
