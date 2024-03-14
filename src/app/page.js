@@ -16,7 +16,7 @@ export default function Home() {
   const [contactOpen, setContactOpen] = useState(false);
   return (
     <main
-      className="flex flex-row items-center justify-between min-h-screen overflow-hidden"
+      className="flex flex-row items-center min-h-screen overflow-hidden md:justify-between"
       style={{
         backgroundImage: "url('/images/redwoods.jpg')",
         margin: 0,

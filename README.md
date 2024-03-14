@@ -1,33 +1,23 @@
-Fonts that i like for this portfolio
+##Thanks for checking out my portfolio!
 
-very bold header
-bebas neue
-Fugaz one
-indie
-shadows no lights
-amatic
+#Christian Ludwell
+##Software Engineer
 
-video gamish
-honk
+It felt strange to me when I graduated from my bootcamp that the staff encouraged us to use a template for our portfolios. If you can't build a portfolio site are you really a software engineer?! So I decided to remake mine.
 
-magazine
-yeseva one
-chonburi
-gloock
-mate sc
-libre bodoni
+I used Next.js, Tailwind CSS, React.js, and just a little anime.js, though I might add more in the future. My intention was to use this opportunity to learn more about anime.js, but I realized I could deploy faster using what I already know of React and Tailwind.
 
-old timey
-im fell english
-eczar
+I will improve the responsiveness of the design in the near future.
 
-look i want is a modern one, corporate, and brand-ish
-something strong and serif
+If you decide to build your own statically hosted Next.js project on Github Pages make sure that you check out my nextjs.config.js file and comment out these two lines from the .yml file that github generates.
 
-serify for reading
-roboto serif
-literata
-baskerville
+```
+# - name: Static HTML export with Next.js
+#   run: ${{ steps.detect-package-manager.outputs.runner }} next export
+```
+
+Please reach out to me with any work opportunities.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
