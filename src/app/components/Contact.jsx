@@ -38,9 +38,9 @@ export default function Contact({contactOpen, setContactOpen}) {
           <p className="my-12">
             {`Please feel free to email me at `}
             <a href="mailto:cludwell@gmail.com">cludwell@gmail.com</a>.{" "}
-            {`Or checkout my resume below by clicking the icon`}
+            {`Or checkout my resume below by clicking the icon.`}
           </p>
-          <div className="flex flex-row flex-wrap justify-center gap-4 scale-50 sm:scale-0 md:scale-100 md:gap-20">
+          <div className="flex flex-row flex-wrap justify-around gap-6 scale-50 sm:scale-75 md:scale-100 md:gap-20">
             <a href="https://github.com/cludwell" target="_blank">
               <IconGithub />
             </a>
