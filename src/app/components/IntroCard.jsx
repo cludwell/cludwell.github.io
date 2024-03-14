@@ -1,4 +1,4 @@
-import { gloock } from "../fonts";
+import { gloock,bebas } from "../fonts";
 import Image from "next/image";
 import smallselfie2 from "/public/images/smallselfie.jpg";
 import Dots from "./Dots";
@@ -24,7 +24,7 @@ export default function IntroCard({
           Christian Ludwell
         </h2>
         <h2
-          className={`${gloock.className} text-6xl md:absolute top-[-5rem] z-10 left-[-4rem] whitespace-nowrap `}
+          className={`${bebas.className} text-6xl md:absolute top-[-5rem] z-10 left-[-4rem] whitespace-nowrap opacity-60 `}
         >
           Software Engineer
         </h2>
