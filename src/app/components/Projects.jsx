@@ -9,6 +9,7 @@ import fellowship from "../../../public/images/fellowship.png";
 import spacey from "../../../public/images/spacey.png";
 import IconMiniGithub from "./Icons/IconMiniGithub";
 import scarebnb from "../../../public/images/scarebnb.png";
+import Title from "./Title";
 
 export default function Projects({ projectsOpen, setProjectsOpen }) {
   const projectRef = useRef(null);
@@ -50,18 +51,21 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
       >
         <div className="max-w-screen-md projects">
           <h2 className="mb-12 text-4xl text-white"> Projects 👨‍🏫</h2>
-          <h2 className="text-3xl ">SideQuest</h2>
-          <span className="image main">
+          <Title>
+            {" "}
             <a href="https://sidequest-grd2.onrender.com/" target="_blank">
-              <Image
-                src={sidequest}
-                alt="a screenshot of the project"
-                className="my-4 rounded-lg"
-                height={1000}
-                width={1000}
-              />
+              SideQuest
             </a>
-          </span>
+          </Title>
+          <a href="https://sidequest-grd2.onrender.com/" target="_blank">
+            <Image
+              src={sidequest}
+              alt="a screenshot of the project"
+              className="my-8 rounded-lg"
+              height={1000}
+              width={1000}
+            />
+          </a>
           <div className="flex flex-row justify-around my-8">
             <a href="https://github.com/cludwell/sidequest" target="_blank">
               <div className="w-10 h-10">
@@ -78,18 +82,21 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
             </a>
           </div>
           <p>{`My latest project is SideQuest, a full stack app that facilitates playing short sessions of Dungeons and Dragons 5e with the ChatGPT API! It's still a work in progress, but I feel I have a minimally viable product that better represents my abilities as a full stack developer. For this project I used technologies including 📐Prisma, ⚫Next.js, ⚫Next-Auth, ⚛Redux-Toolkit, 🟦TypeScript, 🌫 Tailwind CSS, and 🌼Daisy UI.`}</p>
-          <h2 className="mt-12 text-3xl">Fancamp</h2>
-          <span className="image main">
+          <Title>
+            {" "}
             <a href="https://fancamp.onrender.com/" target="_blank">
-              <Image
-                src={fellowship}
-                alt="a screenshot of the fancamp project"
-                className="my-4 rounded-lg"
-                width={1000}
-                height={1000}
-              />
+              Fancamp
             </a>
-          </span>
+          </Title>
+          <a href="https://fancamp.onrender.com/" target="_blank">
+            <Image
+              src={fellowship}
+              alt="a screenshot of the fancamp project"
+              className="my-8 rounded-lg"
+              width={1000}
+              height={1000}
+            />
+          </a>
           <div className="flex flex-row justify-around my-8">
             <a
               href="https://github.com/cludwell/capstone-project"
@@ -118,18 +125,21 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
             Technologies used include 🧪Flask, ☕JavaScript, 🐍Python,
             🐘PostgreSQL, ⚛Redux.js/React.js, ⚗SQLAlchemy, and 🌫 Tailwind CSS
           </p>
-          <h2 className="mt-12 text-3xl ">Spacey</h2>
-          <span className="image main">
+          <Title>
+            {" "}
             <a href="https://spacey-yscj.onrender.com/" target="_blank">
-              <Image
-                src={spacey}
-                alt="a screenshot of spacey"
-                className="my-4 rounded-lg"
-                width={1000}
-                height={1000}
-              />
+              Spacey
             </a>
-          </span>
+          </Title>
+          <a href="https://spacey-yscj.onrender.com/" target="_blank">
+            <Image
+              src={spacey}
+              alt="a screenshot of spacey"
+              className="my-8 rounded-lg"
+              width={1000}
+              height={1000}
+            />
+          </a>
 
           <div className="flex flex-row justify-around my-8">
             <a href="https://github.com/Chris-MacMaster/spacy" target="_blank">
@@ -152,13 +162,18 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
             🐍Python, ⚛Redux.js/React.js ⚗SQLAlchemy, and 🌫 Tailwind CSS.
           </p>
 
-          <h2 className="mt-12 text-3xl">ScareBnb</h2>
+          <Title>
+            {" "}
+            <a href="https://chris-auth-me-373j.onrender.com/" target="_blank">
+              ScareBnb
+            </a>
+          </Title>
           <span className="image main">
             <a href="https://chris-auth-me-373j.onrender.com/" target="_blank">
               <Image
                 src={scarebnb}
                 alt={"a screenshot of scarebnb app"}
-                className="my-4 rounded-lg"
+                className="my-8 rounded-lg"
                 width={1000}
                 height={1000}
               />
