@@ -3,7 +3,7 @@ import anime from "animejs";
 
 const Dots = () => {
   return (
-    <div className="relative grid px-8 py-12 place-content-center">
+    <div className="relative grid my-8 md:mx-auto max-w-fit place-content-center">
       <DotGrid />
     </div>
   );

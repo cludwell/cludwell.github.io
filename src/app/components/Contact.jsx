@@ -33,14 +33,14 @@ export default function Contact({contactOpen, setContactOpen}) {
         <Tab title={"Contact"} number={"04"} open={contactOpen}/>
       </span>
       <SideDrawer open={contactOpen} setOpen={setContactOpen} ref={contactRef}>
-        <div className="max-w-screen-md contact">
+        <div className="flex flex-col max-w-screen-md contact">
           <h2 className="text-4xl text-white"> Contact 📬</h2>
           <p className="my-12">
             {`Please feel free to email me at `}
             <a href="mailto:cludwell@gmail.com">cludwell@gmail.com</a>.{" "}
             {`Or checkout my resume below by clicking the icon`}
           </p>
-          <div className="flex flex-row flex-wrap justify-center gap-20">
+          <div className="flex flex-row flex-wrap justify-center gap-4 scale-50 sm:scale-0 md:scale-100 md:gap-20">
             <a href="https://github.com/cludwell" target="_blank">
               <IconGithub />
             </a>

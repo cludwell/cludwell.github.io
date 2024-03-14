@@ -12,26 +12,26 @@ export default function IntroCard({
   return (
     <>
       <div
-        className={`relative w-1/2 text-white transition-all duration-300 ease-in-out ${
+        className={`relative w-1/2 text-white transition-all duration-300 ease-in-out scale-[.5] sm:scale-[.6] md:scale-[.7] lg:scale-100  ${
           !aboutMeOpen && !skillsOpen && !projectsOpen && !contactOpen
             ? "translate-x-0"
             : "translate-x-[110vw]"
         }`}
       >
         <h2
-          className={`${gloock.className} text-7xl absolute top-[-9rem] z-10 left-[-9rem]`}
+          className={`${gloock.className} text-7xl md:absolute top-[-9rem] z-10 left-[-9rem] whitespace-nowrap `}
         >
           Christian Ludwell
         </h2>
         <h2
-          className={`${gloock.className} text-6xl absolute top-[-5rem] z-10 left-[-4rem]`}
+          className={`${gloock.className} text-6xl md:absolute top-[-5rem] z-10 left-[-4rem] whitespace-nowrap `}
         >
           Software Engineer
         </h2>
         <Image
           src={smallselfie2}
           alt={"the software developer on a backpacking trip"}
-          className="absolute z-10 scale-75"
+          className="absolute z-10 lg:scale-75"
           width={500}
           height={500}
         />

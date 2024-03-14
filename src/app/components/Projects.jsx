@@ -116,7 +116,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
           <br />
           <p>
             Technologies used include 🧪Flask, ☕JavaScript, 🐍Python,
-            🐘PostgreSQL,⚛Redux.js/React.js, ⚗SQLAlchemy, and 🌫 Tailwind CSS
+            🐘PostgreSQL, ⚛Redux.js/React.js, ⚗SQLAlchemy, and 🌫 Tailwind CSS
           </p>
           <h2 className="mt-12 text-3xl ">Spacey</h2>
           <span className="image main">
