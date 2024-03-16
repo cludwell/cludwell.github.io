@@ -1,9 +1,8 @@
 import { baskervville } from "../fonts";
 import { useEffect, forwardRef } from "react";
-const SideDrawer = forwardRef(({ open, setOpen, children }, ref) => {
 
+const SideDrawer = forwardRef(({ open, children }, ref) => {
   return (
-
     <div
     className={`
     fixed w-3/4 md:w-2/3 flex transition-all z-30 duration-500 h-screen ease-in-out top-0 bg-black/50 right-0 overflow-y-auto overflow-x-hidden p-2 md:p-6 text-xs sm:text-sm md:text-base
