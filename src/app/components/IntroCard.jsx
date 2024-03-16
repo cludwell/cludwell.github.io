@@ -1,7 +1,7 @@
 import { bebas, chonburi } from "../fonts";
 import Image from "next/image";
 import smallselfie2 from "/public/images/smallselfie.jpg";
-
+import overlay from "/public/images/overlay.png";
 export default function IntroCard({
   aboutMeOpen,
   skillsOpen,
@@ -31,12 +31,18 @@ export default function IntroCard({
         >
           Software Engineer
         </h2>
-
-        <Image
-          src={smallselfie2}
-          alt={"the software developer on a backpacking trip "}
-          className="relative z-20 max-w-xl rounded-full w-[40vmin] sm:w-[30vmin]"
-        />
+        <div className="relative max-w-xl rounded-full w-[40vmin] sm:w-[30vmin] overflow-clip">
+          <Image
+            src={smallselfie2}
+            alt={"the software developer on a backpacking trip "}
+            className="z-10 "
+          />
+          <Image
+            src={overlay}
+            alt="a filter for images"
+            className="absolute inset-0 z-20"
+          />
+        </div>
       </div>
     </>
   );
