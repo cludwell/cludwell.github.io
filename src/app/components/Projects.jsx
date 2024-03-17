@@ -10,6 +10,7 @@ import spacey from "../../../public/images/spacey.png";
 import IconMiniGithub from "./Icons/IconMiniGithub";
 import scarebnb from "../../../public/images/scarebnb.png";
 import Title from "./Title";
+import juanita from '/public/images/juanita.png'
 
 export default function Projects({ projectsOpen, setProjectsOpen }) {
   const projectRef = useRef(null);
@@ -90,7 +91,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
           </Title>
           <a href="https://fancamp.onrender.com/" target="_blank">
             <Image
-              src={fellowship}
+              src={juanita}
               alt="a screenshot of the fancamp project"
               className="my-8 rounded-lg"
               width={1000}
