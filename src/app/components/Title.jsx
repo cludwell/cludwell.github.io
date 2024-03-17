@@ -7,7 +7,7 @@ export default function Title({ children }) {
       >
         {children}
       </div>
-      <div className="absolute bottom-[-10px] z-0 h-1 transition-all duration-200 ease-in-out bg-orange-500 w-inherit group-hover:h-11 w-40"></div>
+      <div className="absolute bottom-[-10px] z-0 h-1 transition-all duration-200 ease-in-out bg-orange-500 w-inherit group-hover:h-11 w-64"></div>
     </div>
   );
 }
