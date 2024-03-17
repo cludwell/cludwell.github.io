@@ -9,7 +9,7 @@ export default function Tab({ title, number, open }) {
       >
         {number}
       </div>
-      <h2 className={`${chonburi.className} text-5xl text-shadow`}>{title}</h2>
+      <h2 className={`${chonburi.className} text-5xl text-shadow text-nowrap`}>{title}</h2>
     </li>
   );
 }
