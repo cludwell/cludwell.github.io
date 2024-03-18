@@ -11,7 +11,7 @@ export default function IntroCard({
   return (
     <>
       <div
-        className={`relative text-white transition-all duration-300 ease-in-out  self-start h-screen w-1/2 pr-12 md:pr-[8vmin] lg:mr-[20vmin] pt-[20vmin] md:pt-[10vmin] flex flex-col items-end ${
+        className={`relative text-white transition-all duration-300 ease-in-out  self-start h-screen w-1/2 pr-12 md:pr-[8vmin] lg:mr-[20vmin] pt-[20vmin] md:pt-[10vmin] flex flex-col items-end  ${
           !aboutMeOpen && !skillsOpen && !projectsOpen && !contactOpen
             ? "translate-x-0"
             : "translate-x-[110vw]"

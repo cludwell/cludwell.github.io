@@ -16,7 +16,7 @@ export default function Home() {
   const [contactOpen, setContactOpen] = useState(false);
   return (
     <main
-      className="flex flex-row items-center justify-between min-h-screen overflow-hidden"
+      className="flex flex-row items-center min-h-screen overflow-hidden sm:justify-between"
       style={{
         backgroundImage: "url('/images/redwoods.jpg')",
         margin: 0,
@@ -25,7 +25,7 @@ export default function Home() {
         backgroundPosition: "50% 80%",
       }}
     >
-      <nav className="z-10 sm:ml-8 md:ml-16 ">
+      <nav className="z-10 w-52 sm:w-fit sm:ml-8 md:ml-16 ">
         <ul>
           <AboutMe aboutMeOpen={aboutMeOpen} setAboutMeOpen={setAboutMeOpen} />
           <Projects
