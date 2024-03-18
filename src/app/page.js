@@ -25,7 +25,7 @@ export default function Home() {
         backgroundPosition: "50% 80%",
       }}
     >
-      <nav className="z-10 ml-4 sm:ml-8 md:ml-16 ">
+      <nav className="z-10 sm:ml-8 md:ml-16 ">
         <ul>
           <AboutMe aboutMeOpen={aboutMeOpen} setAboutMeOpen={setAboutMeOpen} />
           <Projects
