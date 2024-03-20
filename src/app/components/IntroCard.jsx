@@ -19,7 +19,7 @@ export default function IntroCard({
       >
         <div
           className={`
-    fixed w-1/2 flex transition-all z-0 duration-500 h-screen ease-in-out top-0 bg-orange-500/50 right-0 overflow-y-auto overflow-x-hidden`}
+    fixed w-1/2 flex transition-all z-0 duration-500 h-screen ease-in-out top-0 bg-orange-500/40 right-0 overflow-y-auto overflow-x-hidden`}
         />
         <h2
           className={`${chonburi.className} text-[7vmin] z-10 text-shadow leading-[2.3rem]  md:leading-[4rem] relative w-full`}
