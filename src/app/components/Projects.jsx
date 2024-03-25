@@ -87,7 +87,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
             {`My latest effort is a volunteer project for a Unitarian Universalist-adjacent spiritual conference my friends are organizing, called The SpokesWheel Conference. The emphasis here was on deployment speed and shipping a platform for them to advertise and track registrations, so I tried to stick to technologies I was more familiar with, but also took the chance to experiment with framer-motion.`}
             <br className="" />
             {`
-          For this project I used technologies including 🌼Daisy UI, framer-motion, 🟨JavaScript, ⚫Next.js, ⚫Next-Auth, 📐Prisma, 🌫 Tailwind CSS, and 🐻 Zustand.`}
+          For this project I used technologies including 🌼Daisy UI, framer-motion, 🟨JavaScript, ⚫Next.js, ⚫Next-Auth, 🐘PostgreSQL, 📐Prisma, 🌫 Tailwind CSS, and 🐻 Zustand.`}
           </p>
           <Title>
             {" "}
@@ -119,7 +119,7 @@ export default function Projects({ projectsOpen, setProjectsOpen }) {
               <IconBrowser />
             </a>
           </div>
-          <p>{`This past winter I developed SideQuest, a full stack app that facilitates playing short sessions of Dungeons and Dragons 5e with the ChatGPT API! It's still a work in progress, but I feel I have a minimally viable product that better represents my abilities as a full stack developer. For this project I used technologies including 📐Prisma, ⚫Next.js, ⚫Next-Auth, ⚛Redux-Toolkit, 🟦TypeScript, 🌫 Tailwind CSS, and 🌼Daisy UI.`}</p>
+          <p>{`This past winter I developed SideQuest, a full stack app that facilitates playing short sessions of Dungeons and Dragons 5e with the ChatGPT API! It's still a work in progress, but I feel I have a minimally viable product that better represents my abilities as a full stack developer. For this project I used technologies including 🌼Daisy UI, ⚫Next.js, ⚫Next-Auth, 🐘 PostgreSQL, 📐Prisma, ⚛Redux-Toolkit, 🟦TypeScript, and 🌫 Tailwind CSS.`}</p>
           <Title>
             {" "}
             <a href="https://fancamp.onrender.com/" target="_blank">
