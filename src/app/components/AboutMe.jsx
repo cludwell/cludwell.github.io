@@ -29,7 +29,7 @@ export default function AboutMe({ aboutMeOpen, setAboutMeOpen }) {
 
   return (
     <>
-      <span onClick={openDrawer} >
+      <span onClick={openDrawer}>
         <Tab title={"About Me"} number={"01"} open={aboutMeOpen} />
       </span>
       <SideDrawer open={aboutMeOpen} setOpen={setAboutMeOpen} ref={aboutMeRef}>
@@ -38,28 +38,16 @@ export default function AboutMe({ aboutMeOpen, setAboutMeOpen }) {
 
           <Dots />
           <p>
-            {` Hi! I'm Chris! I'm a full stack Software Engineer looking for a
-          Junior Developer position. I'm passionate about software that levels
-          playing fields and changes the way we live our lives.`}
+            {` Hi! I'm Chris! I'm a full stack Software Engineer looking for new work opportunities. I'm passionate about software that levels playing fields and changes the way we live our lives.`}
           </p>
           <br />
           <p>
-            {`Before becoming a software engineer I was a Senior Installer doing
-          residential solar installations. My role meant quality and safe
-          installations, for clients and my team, all within the span of one
-          day. It was from this work that I learned I enjoyed creative problem
-          solving and wanted a career in which I was always learning and
-          constantly being challenged, as well as the sense of completion that
-          comes from seeing a project in all aspects from start to finish.`}{" "}
+            {`I am an alumni of the App Academy Full Stack Software Engineering bootcamp, a six month full-time intensive program. Prior to transitioning into software engineering, I worked as a Senior Solar Panel Installer, specializing in residential solar installations. This role required a keen attention to detail and the ability to find creative solutions within tight time frames. It was during this time that I discovered my passion for creative problem-solving and my desire for a career that constantly challenges me to learn and grow.  While I may be a career transitioner and not the traditional Computer Science graduate, I bring soft skills and experiences a graduate might lack, such as mission impact, quick turnaround, and building experiences clients love.`}{" "}
           </p>
+          
           <br />
           <p>
-            {` When I am not working I am backpacking in a national forest or
-          exploring a part of Mexico I've never been to.`}{" "}
-          </p>
-          <br />
-          <p>
-            {`I'm currently located in Portland, OR but looking to relocate given
+            {`I'm currently located in Portland, OR but hoping to relocate given
           the right opportunity! Please feel free to contact me to discuss work
           opportunities or possible collaborations.`}
           </p>
