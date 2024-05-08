@@ -32,7 +32,7 @@ export default function Skills({ skillsOpen, setSkillsOpen }) {
       <SideDrawer open={skillsOpen} setOpen={setSkillsOpen} ref={skillsRef}>
         <div className="max-w-screen-md skills">
           <h2 className="text-4xl text-white"> Skills 👨‍💻</h2>
-          <p className="my-12">{`At the moment I'm studying C# and also experimenting with frontend frameworks like framer-motion and anime.js`}</p>
+          <p className="my-12">{`At the moment I'm studying C# and also experimenting with frontend frameworks like framer-motion and three.js.`}</p>
           <p href="https://skillicons.dev" align="center" className=" md:scale-125">
             <img
               src="https://skillicons.dev/icons?i=androidstudio,aws,cs,css,docker,eclipse,express,html,flask,git,js,nodejs,nextjs,postgres,postman,prisma,py,react,redux,sqlite,sequelize,tailwind,ts,visualstudio,vscode&perline=5"

@@ -38,13 +38,13 @@ export default function AboutMe({ aboutMeOpen, setAboutMeOpen }) {
 
           <Dots />
           <p>
-            {` Hi! I'm Chris! I'm a full stack Software Engineer looking for new work opportunities. I'm passionate about software that levels playing fields and changes the way we live our lives.`}
+            {` Hi! I'm Chris! I'm a full stack Software Engineer looking for new work opportunities. I'm interested in ed-tech, ecommerce, and tech that levels playing fields.`}
           </p>
           <br />
           <p>
-            {`I am an alumni of the App Academy Full Stack Software Engineering bootcamp, a six month full-time intensive program. Prior to transitioning into software engineering, I worked as a Senior Solar Panel Installer, specializing in residential solar installations. This role required a keen attention to detail and the ability to find creative solutions within tight time frames. It was during this time that I discovered my passion for creative problem-solving and my desire for a career that constantly challenges me to learn and grow.  While I may be a career transitioner and not the traditional Computer Science graduate, I bring soft skills and experiences a graduate might lack, such as mission impact, quick turnaround, and building experiences clients love.`}{" "}
+            {`I am an alumni of the App Academy Full Stack Software Engineering bootcamp, a six month full-time intensive program. Prior to transitioning into software engineering, I worked as a Senior Solar Panel Installer, specializing in residential solar installations. This role required a keen attention to detail and the ability to find creative solutions within tight time frames. It was during this time that I discovered my passion for creative problem-solving and my desire for a career that constantly challenges me to learn and grow.  While I may be a career transitioner and not the traditional Computer Science graduate, I bring soft skills and experiences a graduate might lack, such as mission impact, quick turnaround, and building experiences clients love.`}
           </p>
-          
+
           <br />
           <p>
             {`I'm currently located in Portland, OR but hoping to relocate given
