@@ -38,7 +38,7 @@ export default function AboutMe({ aboutMeOpen, setAboutMeOpen }) {
 
           <Dots />
           <p>
-            {` Hi! I'm Chris! I'm a full stack Software Engineer looking for new work opportunities. I'm interested in ed-tech, ecommerce, and tech that levels playing fields.`}
+            {` Hi! I'm Chris! I'm a full stack Software Engineer looking for new work opportunities. I'm interested in ed-tech, ecommerce, tech that levels playing fields.`}
           </p>
           <br />
           <p>
