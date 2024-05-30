@@ -1,11 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import Tab from "./Tab";
 import SideDrawer from "./SideDrawer";
-import Dots from "./Dots";
 import IconBrowser from "./Icons/IconBrowser";
 import Image from "next/image";
 import sidequest from "../../../public/images/sidequest.png";
-import fellowship from "../../../public/images/fellowship.png";
 import spacey from "../../../public/images/spacey.png";
 import spokeswheel from "/public/images/spokeswheel.png";
 import IconMiniGithub from "./Icons/IconMiniGithub";
